@@ -137,6 +137,28 @@ main {
     background-color: rgb(101, 231, 231);
 }
 
+.info-grid {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.info-block {
+    border: 1px solid #f5f5f5;
+    padding: 0.7rem;
+    transition: background-color .2s ease, border-left-color .2s ease;
+    border-left: 6px solid transparent;
+    background: #fff;
+}
+
+.info-block:hover {
+    background: #e3e3e3;
+    border-left-color: #17abb3;
+}
+
+.time-periode {
+    color: #17abb3;
+}
+
 /* FOOTER */
 footer {
     display: flex;
