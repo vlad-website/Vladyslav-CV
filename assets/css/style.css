@@ -40,8 +40,7 @@ body {
 
 /* HEADER */
 header {
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
     gap: 20px;
     padding: 20px;
     background-color: #17abb3;
@@ -51,10 +50,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex: 0 0 30%;
 }
 
 .profile-descr {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
@@ -123,31 +124,47 @@ header {
 
 /* MAIN */
 main {
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
     gap: 20px;
     padding: 20px;
 }
 
 .cards {
     background-color: #887979;
+    flex: 0 0 30%;
 }
 
 .main-info {
     background-color: rgb(101, 231, 231);
+    flex: 1;
 }
 
-.info-grid {
-    display: grid;
+.info-flex {
+    display: flex;
+    flex-direction: column;
     gap: 0.75rem;
 }
 
+.info {
+    margin: 1rem;
+}
+
 .info-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     border: 1px solid #f5f5f5;
     padding: 0.7rem;
+    /* margin: 0 1rem 0 1rem; */
+
     transition: background-color .2s ease, border-left-color .2s ease;
     border-left: 6px solid transparent;
     background: #fff;
+}
+
+.info-descr {
+    display: flex;
+    flex-direction: column;
 }
 
 .info-block:hover {
@@ -157,6 +174,7 @@ main {
 
 .time-periode {
     color: #17abb3;
+    white-space: nowrap;
 }
 
 /* FOOTER */
