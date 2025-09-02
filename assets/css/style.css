@@ -38,6 +38,14 @@ body {
     background-color: #cade48;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
+
+span, p {
+    font-family: "Raleway", sans-serif;
+}
+
 /* HEADER */
 header {
     display: flex;
@@ -129,11 +137,6 @@ main {
     padding: 20px;
 }
 
-.cards {
-    background-color: #887979;
-    flex: 0 0 30%;
-}
-
 .main-info {
     background-color: rgb(101, 231, 231);
     flex: 1;
@@ -176,6 +179,76 @@ main {
     color: #17abb3;
     white-space: nowrap;
 }
+
+/* MAIN Cards */
+
+.cards {
+    background-color: #887979;
+    flex: 0 0 30%;
+}
+
+.stars {
+    color: #17abb3;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0;
+}
+
+.lang {
+    list-style: none;
+    padding: 0;
+}
+
+.lang li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0;
+}
+
+.soft-skills {
+    list-style: square;    
+    padding: 0;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.soft-skills li::marker {
+    color: #17abb3;
+}
+
+.soft-descr {
+    color: #17abb3;
+}
+
+.hobby {
+    list-style: square;
+    padding: 0;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.hobby li::marker {
+    color: #17abb3;
+}
+
+.hobby-descr {
+    color: #17abb3;
+}
+
+
+
 
 /* FOOTER */
 footer {
