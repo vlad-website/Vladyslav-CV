@@ -38,26 +38,47 @@ body {
     background-color: #cade48;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
+
+span, p {
+    font-family: "Raleway", sans-serif;
+}
+
 /* HEADER */
 header {
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
     gap: 20px;
     padding: 20px;
+    background-color: #17abb3;
 }
 
 .profile-photo-wrap {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex: 0 0 30%;
 }
 
 .profile-descr {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     background-color: rgb(179, 126, 229);
+    color: #fff;
+}
+
+.profile-descr h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.profile-descr h2 {
+    text-align: center;
+    font-size: 32px;
 }
 
 .profile-photo-link {
@@ -74,21 +95,160 @@ header {
     border: 4px solid #fff;
 }
 
+.contacts ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.contacts li {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 0.2rem; */
+}
+
+.contacts ul li:nth-child(3) {
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.contacts a {
+    color: #fff;
+    
+}
+
+.contacts .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+
+
 /* MAIN */
 main {
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
     gap: 20px;
     padding: 20px;
 }
 
-.cards {
-    background-color: #887979;
-}
-
 .main-info {
     background-color: rgb(101, 231, 231);
+    flex: 1;
 }
+
+.info-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.info {
+    margin: 1rem;
+}
+
+.info-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #f5f5f5;
+    padding: 0.7rem;
+    /* margin: 0 1rem 0 1rem; */
+
+    transition: background-color .2s ease, border-left-color .2s ease;
+    border-left: 6px solid transparent;
+    background: #fff;
+}
+
+.info-descr {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-block:hover {
+    background: #e3e3e3;
+    border-left-color: #17abb3;
+}
+
+.time-periode {
+    color: #17abb3;
+    white-space: nowrap;
+}
+
+/* MAIN Cards */
+
+.cards {
+    background-color: #887979;
+    flex: 0 0 30%;
+}
+
+.stars {
+    color: #17abb3;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0;
+}
+
+.lang {
+    list-style: none;
+    padding: 0;
+}
+
+.lang li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0;
+}
+
+.soft-skills {
+    list-style: square;    
+    padding: 0;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.soft-skills li::marker {
+    color: #17abb3;
+}
+
+.soft-descr {
+    color: #17abb3;
+}
+
+.hobby {
+    list-style: square;
+    padding: 0;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.hobby li::marker {
+    color: #17abb3;
+}
+
+.hobby-descr {
+    color: #17abb3;
+}
+
+
+
 
 /* FOOTER */
 footer {
