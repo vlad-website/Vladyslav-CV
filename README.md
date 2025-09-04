@@ -18,4 +18,4 @@ Il respecte les consignes : structure en HTML5, CSS (Flexbox), accessibilité, S
 
 ## Déploiement
 Le site est en ligne via GitHub Pages :  
-https://github.com/vlad-website/Vladyslav-CV
+https://vlad-website.github.io/Vladyslav-CV/
